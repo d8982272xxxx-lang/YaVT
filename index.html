@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YaVT — поиск</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="topbar" aria-label="Быстрые ссылки">
+        <a href="#" class="topbar__link">Почта</a>
+        <a href="#" class="topbar__link">Карты</a>
+        <a href="#" class="topbar__link">Видео</a>
+        <a href="#" class="topbar__link">Маркет</a>
+      </header>
+
+      <section class="hero" aria-labelledby="logo-title">
+        <h1 id="logo-title" class="logo">Ya<span>VT</span></h1>
+
+        <form class="search" role="search" aria-label="Поиск">
+          <label for="query" class="sr-only">Введите запрос</label>
+          <input
+            id="query"
+            class="search__input"
+            type="text"
+            name="q"
+            placeholder="Найдётся всё, только проще"
+            autocomplete="off"
+          />
+          <button class="search__button" type="submit">Найти</button>
+        </form>
+
+        <p class="hint">Например: погода, перевод, расписание</p>
+      </section>
+
+      <section class="widgets" aria-label="Инфо">
+        <article class="widget">
+          <h2>Погода</h2>
+          <p>+6°, облачно</p>
+        </article>
+        <article class="widget">
+          <h2>Новости</h2>
+          <p>Дизайн стал ещё проще.</p>
+        </article>
+        <article class="widget">
+          <h2>Курс</h2>
+          <p>₽ / $: 92.4</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
